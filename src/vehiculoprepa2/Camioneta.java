@@ -16,6 +16,10 @@ public class Camioneta extends Vehiculo{
         super(color, cilindro, dueno);
     }
     
+    public void Rustiquear(){
+        Syistem.out.println("LA CAMIONETA ESTÁ RUSTIQUEANDO");
+    }
+    
     public void Mostrar(){
         System.out.println("SOY UNA CAMIONETA");
         System.out.println("Color: "+this.color);
