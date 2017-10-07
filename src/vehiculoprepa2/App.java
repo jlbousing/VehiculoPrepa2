@@ -37,6 +37,13 @@ public class App {
         for (int i = 0; i < vecVehiculo.length; i++) {
             
             vecVehiculo[i].Mostrar();
+            
+            if(vecVehiculo[i] instanceof Camioneta){
+                
+                //SE APLICA UN CASTEO
+                Camioneta c = (Camioneta) vecVehiculo[i];
+                c.Rustiquear(); //SE LLAMA AL MÉTODO RUSTIQUEAR QUE SOLO ESTA EN CAMIONETA
+            }
         }
     }
     
